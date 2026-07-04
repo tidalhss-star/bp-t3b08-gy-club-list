@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="bpaas-design-system" content="editorial-apple">
+  <meta name="bpaas-design-theme" content="kr-warm-grid">
+  <title>가양 클럽 모음 블로그 - 가양동 클럽 초보자 완벽 가이드</title>
+  <meta name="description" content="가양 클럽 처음 가는 bro들을 위한 꿀팁 대방출! 입장료, 복장, 음악 장르까지 가양 클럽 모음 블로그에서 싹 다 알려준다.">
+  <meta name="keywords" content="가양 클럽 모음, 가양 클럽 블로그, 가양동 클럽 가이드, 가양 클럽 초보, 가양 클럽 꿀팁, 가양 클럽 입장료, 가양 클럽 복장">
+  <link rel="canonical" href="https://t3b08-gy-club-list.vercel.app/blog">
+  <meta property="og:title" content="가양 클럽 모음 블로그 - 가양동 클럽 초보자 완벽 가이드">
+  <meta property="og:description" content="가양 클럽 처음 가는 bro들을 위한 꿀팁 대방출! 입장료, 복장, 음악 장르까지 가양 클럽 모음 블로그에서 싹 다 알려준다.">
+  <meta property="og:url" content="https://t3b08-gy-club-list.vercel.app/blog">
+  <meta property="og:type" content="article">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #faf8f5;
+      color: #1d1d1f;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a {
+      color: #1d1d1f;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #e85d3a;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(250, 248, 245, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+    }
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    nav .logo span {
+      color: #e85d3a;
+    }
+    nav .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    nav .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+    nav .nav-links a:hover {
+      border-bottom-color: #e85d3a;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #1d1d1f;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: rgba(250, 248, 245, 0.98);
+      backdrop-filter: blur(12px);
+      padding: 20px 24px;
+      gap: 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      nav .nav-links {
+        display: none;
+      }
+    }
+    /* Blog post styles */
+    .blog-post {
+      padding: 60px 0 80px;
+    }
+    .blog-post .container {
+      max-width: 780px;
+    }
+    .blog-post .post-meta {
+      font-size: 0.9rem;
+      color: #6e6e73;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .blog-post .post-meta span {
+      background: #e8e6e1;
+      padding: 2px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    .blog-post h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .blog-post h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 40px 0 16px;
+      letter-spacing: -0.02em;
+    }
+    .blog-post h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 28px 0 10px;
+    }
+    .blog-post p {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+      color: #2c2c2e;
+    }
+    .blog-post ul, .blog-post ol {
+      margin: 16px 0 24px;
+      padding-left: 24px;
+    }
+    .blog-post li {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: #2c2c2e;
+    }
+    .blog-post .highlight-box {
+      background: #f0ede8;
+      border-left: 4px solid #e85d3a;
+      padding: 20px 24px;
+      border-radius: 8px;
+      margin: 28px 0;
+    }
+    .blog-post .highlight-box p {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+    .blog-post .tip-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      margin: 24px 0;
+    }
+    .blog-post .tip-card h4 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: #e85d3a;
+    }
+    .blog-post .tip-card p {
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+    .blog-post .cta-end {
+      background: #1d1d1f;
+      color: #faf8f5;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin: 48px 0 0;
+    }
+    .blog-post .cta-end p {
+      color: #faf8f5;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    .blog-post .cta-end a {
+      color: #e85d3a;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .blog-post .cta-end a:hover {
+      color: #ff7a5a;
+    }
+    footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6e6e73;
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <nav>
+    <div class="logo">가양<span>클럽</span></div>
+    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links">
+      <a href="/">홈</a>
+      <a href="/list">클럽 리스트</a>
+      <a href="/blog">블로그</a>
+      <a href="/faq">FAQ</a>
+      <a href="tel:010-1234-5678">문의</a>
+    </div>
+  </nav>
+
+  <main class="blog-post">
+    <div class="container">
+      <div class="post-meta">
+        <span>가양 클럽 가이드</span>
+        <span>2025.03.21</span>
+        <span>by bro</span>
+      </div>
+      <h1>가양 클럽 첫 방문? 이거만 알면 너도 당당한 클럽러!</h1>
+      
+      <p>야, bro! 가양 클럽 처음 가본다고? 100% 공감한다. 나도 처음엔 "입장료 얼마지?", "복장 뭐 입어야 되지?", "혼자 가도 되나?" 이런 거 머릿속에 가득했거든. 근데 막상 가보니까 생각보다 별거 없더라. 오늘은 내가 삽질하면서 배운 꿀팁들을 싹 다 풀어줄게. 가양 클럽 모음 중에서 네 스타일에 딱 맞는 곳 고르는 법부터 입장 꿀팁까지 한 방에 정리했다. </p>
+
+      <div class="highlight-box">
+        <p>🔥 핵심 요약: 가양 클럽은 생각보다 진입장벽 낮음. 복장은 깔끔한 셔츠나 반팔티에 청바지면 ok. 입장료는 보통 1~2만원 선이니까 부담 no!</p>
+      </div>
+
+      <h2>1. 가양 클럽, 왜 요즘 핫할까?</h2>
+      <p>솔직히 말해서 홍대나 강남 클럽은 너무 비싸고 복잡하다는 느낌이 있잖아? 근데 가양 클럽들은 달라. 아직 대중에 덜 알려져서 오히려 더 아늑하고, 사람들도 다 친근하게 놀더라고. 게다가 입장료도 부담 없고, 음악 장르도 다양해서 취향별로 골라 들을 수 있어. 내가 가양 클럽 모음 중에서 진짜 괜찮았던 곳들 위주로 소개해줄게.</p>
+
+      <h2>2. 가양 클럽 입장 전 체크리스트</h2>
+      
+      <div class="tip-card">
+        <h4>📌 복장 꿀팁</h4>
+        <p>처음엔 정장 입어야 하나 고민했는데, 전혀 아니다! 깔끔한 흰 티에 청바지, 운동화만 신어도 충분해. 너무 과하게 입으면 오히려 어색해 보일 수 있으니 편하면서도 단정한 스타일로 가자. 나는 처음에 셔츠 입고 갔다가 혼자만 포멀해서 민망했던 적 있음...</p>
+      </div>
+
+      <div class="tip-card">
+        <h4>💰 입장료 & 음료</h4>
+        <p>보통 입장료 1만원~2만원 사이. 주말에는 조금 더 비쌀 수 있으니 미리 확인하는 게 좋아. 입장료에 음료 한 잔 포함된 곳도 많으니까 현금이나 카드 준비해서 가면 된다. "가양 클럽 모음" 페이지에서 각 클럽별 입장료를 비교해보는 것도 꿀팁!</p>
+      </div>
+
+      <div class="tip-card">
+        <h4>👥 혼자? 친구랑?</h4>
+        <p>혼자 가도 전혀 문제없다. 오히려 혼자 가면 새로운 사람들이랑 더 쉽게 친해질 수 있어. 나도 혼자 갔다가 바텐더랑 친해져서 단골이 된 케이스임. 물론 친구랑 가면 더 신나긴 하지만, 혼자여도 충분히 즐길 수 있는 분위기니까 걱정하지 마!</p>
+      </div>
+
+      <h2>3. 가양 클럽 모음 TOP 장르별 추천</h2>
+      <p>가양동에는 생각보다 다양한 컨셉의 클럽들이 있어. 내가 직접 발로 뛰면서 경험한 클럽들을 장르별로 정리해봤다.</p>
+      
+      <h3>🎵 EDM / 일렉트로닉</h3>
+      <p>베이스가 강력한 EDM 좋아한다면 여기로 가봐. 스피커 시스템이 진짜 좋아서 음악에 완전 빠져든다. 특히 주말에는 유명 DJ도 자주 오니까 일정 체크하고 가는 걸 추천.</p>
+
+      <h3>🎤 힙합 / 알앤비</h3>
+      <p>힙합 좋아하는 bro들은 여기로 모여! 최신 힙합 트랙부터 올드스쿨까지 다양하게 틀어줘서 랩 따라 부르면서 놀기 좋아. 분위기도 자유롭고 사람들이 다들 춤추면서 즐거워하는 게 보기 좋더라.</p>
+
+      <h3>🕺 2000년대 레트로</h3>
+      <p>아니 요즘 다시 2000년대 감성이 대세잖아? 여기는 2000년대 댄스 음악 위주로 틀어줘서 감성 터지기 좋아. 나도 여기서 2NE1 노래 듣고 완전 감동했음. 복장도 Y2K 스타일로 맞춰 가면 더 재밌다!</p>
+
+      <h2>4. 가양 클럽에서 진짜 즐기는 법</h2>
+      <p>처음엔 좀 쭈뼛거릴 수 있지만, 몇 가지만 기억하면 바로 적응할 수 있어.</p>
+      <ul>
+        <li><strong>일찍 가자:</strong> 오후 10시 전에 가면 입장료도 싸고 사람도 적어서 분위기 익히기 좋아.</li>
+        <li><strong>바텐더랑 친해져라:</strong> 간단하게 "여기 처음인데 괜찮은 음료 추천해주세요" 한마디면 바로 친근해짐.</li>
+        <li><strong>춤은 부담 없이:</strong> 다들 놀러 온 거니까 너무 의식하지 말고 몸이 가는 대로 흔들어봐.</li>
+        <li><strong>물 자주 마셔:</strong> 클럽에서 땀 많이 흘리니까 중간중간 물 꼭 챙겨 마셔. 술 깨는 데도 도움됨.</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p>💡 bro의 경험담: 나는 첫 클럽에서 너무 긴장해서 한 시간 동안 벽에 붙어있었어... 근데 어떤 형이 "왜 안 놀아?" 하면서 같이 춤추자고 해서 그날 완전 신나게 놀았던 기억이 있음. 가양 클럽 사람들은 다 착하니까 먼저 말 걸어보는 거 추천!</p>
+      </div>
+
+      <h2>5. 가양 클럽 모음 블로그가 알려주는 꿀템</h2>
+      <p>클럽 갈 때 챙기면 좋은 아이템들을 소개한다. 나도 이것들 챙기고 나서 클럽 생활이 훨씬 편해졌어.</p>
+      <ol>
+        <li><strong>미니 손풍기:</strong> 클럽 안이 생각보다 더울 수 있어서 땀 식힐 때 완전 좋음.</li>
+        <li><strong>휴대용 담요:</strong> 클럽 나올 때 갑자기 추울 수 있으니 가방에 하나 넣어가.</li>
+        <li><strong>보조배터리:</strong> 사진 찍고 친구들이랑 연락하다 보면 배터리 광탈하기 일쑤.</li>
+        <li><strong>신분증:</strong> 입장할 때 꼭 필요하니까 깜빡하지 마!</li>
+      </ol>
+
+      <h2>6. FAQ: 가양 클럽 초보가 자주 묻는 질문</h2>
+      <h3>Q:
+</body>
+</html>

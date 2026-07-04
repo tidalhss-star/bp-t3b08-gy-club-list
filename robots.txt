@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://t3b08-gy-club-list.pages.dev/sitemap.xml
+Sitemap: https://gayang-hot-review.program-school.online/sitemap.xml
