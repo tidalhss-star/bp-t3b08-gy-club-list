@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
-  <metadata>BPaaS site identity afa0f3d1b75d223b</metadata>
-  <rect width="64" height="64" rx="13" fill="hsl(320 82% 39%)"/>
-  <path d="M31 0h33v64H17Z" fill="hsl(106 55% 64%)" opacity="0.82"/>
-  <g transform="rotate(16 32 32)" opacity="0.42"><path d="M12 34h40M32 12v40" stroke="#101418" stroke-width="8" stroke-linecap="round"/></g>
-  <text x="32" y="39" text-anchor="middle" fill="#101418" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">GH</text>
+  <title>가양 클럽 모음</title>
+  <rect width="64" height="64" rx="13" fill="hsl(320 47% 23%)"/>
+  <g transform="rotate(0 32 32)"><path d="M12 44 26 24l10 12 6-8 8 16Z" fill="hsl(128 68% 68%)"/><path d="M12 44 26 24l10 12" fill="none" stroke="hsl(320 24% 96%)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/></g>
 </svg>
