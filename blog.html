@@ -1,234 +1,232 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="bpaas-design-system" content="editorial-apple">
-  <meta name="bpaas-design-theme" content="kr-warm-grid">
-  <title>가양 클럽 모음 블로그 - 가양동 클럽 초보자 완벽 가이드</title>
-  <meta name="description" content="가양 클럽 처음 가는 bro들을 위한 꿀팁 대방출! 입장료, 복장, 음악 장르까지 가양 클럽 모음 블로그에서 싹 다 알려준다.">
-  <meta name="keywords" content="가양 클럽 모음, 가양 클럽 블로그, 가양동 클럽 가이드, 가양 클럽 초보, 가양 클럽 꿀팁, 가양 클럽 입장료, 가양 클럽 복장">
-  <link rel="canonical" href="https://gayang-hot-review.program-school.online/blog.html">
-  <meta property="og:title" content="가양 클럽 모음 블로그 - 가양동 클럽 초보자 완벽 가이드">
-  <meta property="og:description" content="가양 클럽 처음 가는 bro들을 위한 꿀팁 대방출! 입장료, 복장, 음악 장르까지 가양 클럽 모음 블로그에서 싹 다 알려준다.">
-  <meta property="og:url" content="https://gayang-hot-review.program-school.online/blog.html">
-  <meta property="og:type" content="article">
-  <style>
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      font-size: 16px;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #faf8f5;
-      color: #1d1d1f;
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-    a {
-      color: #1d1d1f;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    a:hover {
-      color: #e85d3a;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(250, 248, 245, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 24px;
-    }
-    nav .logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-    nav .logo span {
-      color: #e85d3a;
-    }
-    nav .nav-links {
-      display: flex;
-      gap: 28px;
-      align-items: center;
-    }
-    nav .nav-links a {
-      font-size: 0.95rem;
-      font-weight: 500;
-      padding: 6px 0;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.2s ease;
-    }
-    nav .nav-links a:hover {
-      border-bottom-color: #e85d3a;
-    }
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 4px;
-    }
-    .hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: #1d1d1f;
-      border-radius: 2px;
-      transition: all 0.3s ease;
-    }
-    .nav-links.active {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background: rgba(250, 248, 245, 0.98);
-      backdrop-filter: blur(12px);
-      padding: 20px 24px;
-      gap: 16px;
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-    }
-    @media (max-width: 768px) {
-      .hamburger {
-        display: flex;
-      }
-      nav .nav-links {
-        display: none;
-      }
-    }
-    /* Blog post styles */
-    .blog-post {
-      padding: 60px 0 80px;
-    }
-    .blog-post .container {
-      max-width: 780px;
-    }
-    .blog-post .post-meta {
-      font-size: 0.9rem;
-      color: #6e6e73;
-      margin-bottom: 12px;
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
-    .blog-post .post-meta span {
-      background: #e8e6e1;
-      padding: 2px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-    }
-    .blog-post h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-    .blog-post h2 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin: 40px 0 16px;
-      letter-spacing: -0.02em;
-    }
-    .blog-post h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin: 28px 0 10px;
-    }
-    .blog-post p {
-      font-size: 1.05rem;
-      margin-bottom: 18px;
-      color: #2c2c2e;
-    }
-    .blog-post ul, .blog-post ol {
-      margin: 16px 0 24px;
-      padding-left: 24px;
-    }
-    .blog-post li {
-      font-size: 1.05rem;
-      margin-bottom: 10px;
-      color: #2c2c2e;
-    }
-    .blog-post .highlight-box {
-      background: #f0ede8;
-      border-left: 4px solid #e85d3a;
-      padding: 20px 24px;
-      border-radius: 8px;
-      margin: 28px 0;
-    }
-    .blog-post .highlight-box p {
-      margin-bottom: 0;
-      font-weight: 500;
-    }
-    .blog-post .tip-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-      margin: 24px 0;
-    }
-    .blog-post .tip-card h4 {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-      color: #e85d3a;
-    }
-    .blog-post .tip-card p {
-      margin-bottom: 0;
-      font-size: 1rem;
-    }
-    .blog-post .cta-end {
-      background: #1d1d1f;
-      color: #faf8f5;
-      border-radius: 16px;
-      padding: 32px;
-      text-align: center;
-      margin: 48px 0 0;
-    }
-    .blog-post .cta-end p {
-      color: #faf8f5;
-      font-size: 1.1rem;
-      margin-bottom: 12px;
-    }
-    .blog-post .cta-end a {
-      color: #e85d3a;
-      font-weight: 600;
-      text-decoration: underline;
-    }
-    .blog-post .cta-end a:hover {
-      color: #ff7a5a;
-    }
-    footer {
-      border-top: 1px solid rgba(0,0,0,0.06);
-      padding: 32px 24px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #6e6e73;
-    }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>가양 클럽 모음 블로그 - 가양동 클럽 초보자 완벽 가이드</title>
+ <meta name="description" content="가양 클럽 처음 가는 bro들을 위한 꿀팁 대방출! 입장료, 복장, 음악 장르까지 가양 클럽 모음 블로그에서 싹 다 알려준다.">
+ <meta name="keywords" content="가양 클럽 모음, 가양 클럽 블로그, 가양동 클럽 가이드, 가양 클럽 초보, 가양 클럽 꿀팁, 가양 클럽 입장료, 가양 클럽 복장">
+ <link rel="canonical" href="https://gayang-hot-review.program-school.online/blog.html">
+ <meta property="og:title" content="가양 클럽 모음 블로그 - 가양동 클럽 초보자 완벽 가이드">
+ <meta property="og:description" content="가양 클럽 처음 가는 bro들을 위한 꿀팁 대방출! 입장료, 복장, 음악 장르까지 가양 클럽 모음 블로그에서 싹 다 알려준다.">
+ <meta property="og:url" content="https://gayang-hot-review.program-school.online/blog.html">
+ <meta property="og:type" content="article">
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background: #faf8f5;
+ color: #1d1d1f;
+ line-height: 1.6;
+ min-height: 100vh;
+ }
+ a {
+ color: #1d1d1f;
+ text-decoration: none;
+ transition: color 0.2s ease;
+ }
+ a:hover {
+ color: #e85d3a;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ nav {
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ background: rgba(250, 248, 245, 0.92);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(0,0,0,0.06);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 14px 24px;
+ }
+ nav .logo {
+ font-size: 1.4rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ }
+ nav .logo span {
+ color: #e85d3a;
+ }
+ nav .nav-links {
+ display: flex;
+ gap: 28px;
+ align-items: center;
+ }
+ nav .nav-links a {
+ font-size: 0.95rem;
+ font-weight: 500;
+ padding: 6px 0;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.2s ease;
+ }
+ nav .nav-links a:hover {
+ border-bottom-color: #e85d3a;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ padding: 4px;
+ }
+ .hamburger span {
+ display: block;
+ width: 24px;
+ height: 2px;
+ background: #1d1d1f;
+ border-radius: 2px;
+ transition: all 0.3s ease;
+ }
+ .nav-links.active {
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ top: 60px;
+ left: 0;
+ width: 100%;
+ background: rgba(250, 248, 245, 0.98);
+ backdrop-filter: blur(12px);
+ padding: 20px 24px;
+ gap: 16px;
+ border-bottom: 1px solid rgba(0,0,0,0.06);
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: flex;
+ }
+ nav .nav-links {
+ display: none;
+ }
+ }
+ /* Blog post styles */
+ .blog-post {
+ padding: 60px 0 80px;
+ }
+ .blog-post .container {
+ max-width: 780px;
+ }
+ .blog-post .post-meta {
+ font-size: 0.9rem;
+ color: #6e6e73;
+ margin-bottom: 12px;
+ display: flex;
+ gap: 16px;
+ align-items: center;
+ }
+ .blog-post .post-meta span {
+ background: #e8e6e1;
+ padding: 2px 12px;
+ border-radius: 20px;
+ font-size: 0.8rem;
+ }
+ .blog-post h1 {
+ font-size: 2.4rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ line-height: 1.2;
+ margin-bottom: 20px;
+ }
+ .blog-post h2 {
+ font-size: 1.6rem;
+ font-weight: 600;
+ margin: 40px 0 16px;
+ letter-spacing: -0.02em;
+ }
+ .blog-post h3 {
+ font-size: 1.2rem;
+ font-weight: 600;
+ margin: 28px 0 10px;
+ }
+ .blog-post p {
+ font-size: 1.05rem;
+ margin-bottom: 18px;
+ color: #2c2c2e;
+ }
+ .blog-post ul, .blog-post ol {
+ margin: 16px 0 24px;
+ padding-left: 24px;
+ }
+ .blog-post li {
+ font-size: 1.05rem;
+ margin-bottom: 10px;
+ color: #2c2c2e;
+ }
+ .blog-post .highlight-box {
+ background: #f0ede8;
+ border-left: 4px solid #e85d3a;
+ padding: 20px 24px;
+ border-radius: 8px;
+ margin: 28px 0;
+ }
+ .blog-post .highlight-box p {
+ margin-bottom: 0;
+ font-weight: 500;
+ }
+ .blog-post .tip-card {
+ background: #fff;
+ border-radius: 16px;
+ padding: 24px;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+ margin: 24px 0;
+ }
+ .blog-post .tip-card h4 {
+ font-size: 1.1rem;
+ margin-bottom: 8px;
+ color: #e85d3a;
+ }
+ .blog-post .tip-card p {
+ margin-bottom: 0;
+ font-size: 1rem;
+ }
+ .blog-post .cta-end {
+ background: #1d1d1f;
+ color: #faf8f5;
+ border-radius: 16px;
+ padding: 32px;
+ text-align: center;
+ margin: 48px 0 0;
+ }
+ .blog-post .cta-end p {
+ color: #faf8f5;
+ font-size: 1.1rem;
+ margin-bottom: 12px;
+ }
+ .blog-post .cta-end a {
+ color: #e85d3a;
+ font-weight: 600;
+ text-decoration: underline;
+ }
+ .blog-post .cta-end a:hover {
+ color: #ff7a5a;
+ }
+ footer {
+ border-top: 1px solid rgba(0,0,0,0.06);
+ padding: 32px 24px;
+ text-align: center;
+ font-size: 0.9rem;
+ color: #6e6e73;
+ }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
 
-<main><div class="container"><article class="blog-post"><div class="post-meta">가양동 / 클럽 정보 / 초보자 가이드</div><h1>가양 클럽 모음, 처음 가는 사람이 순서대로 확인할 것들</h1><p>가양동은 마곡, 발산 상권과 인접한 위치 특성상 최근 몇 년 사이 클럽을 찾는 수요가 빠르게 늘어난 지역이다. 처음 방문하는 사람이라면 매장마다 운영 방식과 시스템이 달라 헷갈리기 쉬운데, 아래 순서대로 확인하면 당일 시행착오를 크게 줄일 수 있다.</p><div class="tip-card"><h2>1. 위치와 동선부터 파악한다</h2><p>가양역 인근인지, 주차가 가능한 건물인지를 가장 먼저 확인해야 한다. 대중교통과 자차 이동 동선을 미리 검색해두면 당일 이동 시간을 크게 아낄 수 있고, 일행과 만나는 장소를 정할 때도 헤매지 않는다.</p></div><div class="tip-card"><h2>2. 운영 시간과 요일별 분위기를 확인한다</h2><p>클럽은 요일과 시간대에 따라 손님 구성과 분위기가 크게 달라지는 업종이다. 평일과 주말의 혼잡도 차이, 오픈 직후와 심야 시간대의 분위기 차이를 감안해 방문 요일과 시간을 정하는 것이 좋다.</p></div><div class="tip-card"><h2>3. 예약과 입장 절차를 미리 확인한다</h2><p>사전 연락으로 테이블 상황을 확인하는 편이 현장 대기 시간을 줄이는 가장 확실한 방법이다. 전화 문의 시 인원수와 희망 시간대, 동행 인원 구성을 함께 전달하면 안내가 훨씬 빠르게 진행된다.</p></div><div class="tip-card"><h2>4. 비용 구조를 이해하고 방문한다</h2><p>테이블 이용료, 주류, 서비스 요금이 항목별로 구성되는 경우가 많다. 정확한 금액은 매장과 인원, 시간대, 좌석 위치에 따라 달라지므로 방문 전 직접 문의해 확인하는 절차가 반드시 필요하다. 현장에서 안내받는 금액과 사전 문의 금액이 다르지 않은지 확인하는 습관을 들이면 좋다.</p></div><div class="tip-card"><h2>5. 동행 안전 수칙을 정해둔다</h2><p>처음 방문하는 인원이 많은 모임이라면 일행끼리 중간 연락 수단을 정해두고, 귀가 동선도 미리 계획해두는 편이 안전하다. 특히 대중교통 막차 시간을 확인해두면 자리를 옮기는 상황에서도 당황하지 않는다.</p></div><div class="highlight-box"><p>초보자가 가장 자주 놓치는 부분은 복장 규정이다. 매장별로 드레스코드 기준이 달라 방문 전 확인하지 않으면 입구에서 안내를 받아 일행 전체의 일정이 지연될 수 있다. 방문 예정 매장이 있다면 미리 전화로 복장 기준과 예약 가능 여부를 함께 물어보는 것이 가장 확실하다.</p></div><div class="cta-end"><p>가양동 클럽 방문 전 궁금한 사항은 전화로 문의하면 빠르게 안내받을 수 있다.</p><p><strong>문의 전화: 010-1234-5678</strong></p></div></article></div></main>
+<main><div class="container"><article class="blog-post"><div class="post-meta">가양동 / 클럽 정보 / 초보자 가이드</div><h1>가양 클럽 모음, 처음 가는 사람이 순서대로 확인할 것들</h1><p>가양동은 마곡, 발산 상권과 인접한 위치 특성상 최근 몇 년 사이 클럽을 찾는 수요가 빠르게 늘어난 지역이다. 처음 방문하는 사람이라면 매장마다 운영 방식과 시스템이 달라 헷갈리기 쉬운데, 아래 순서대로 확인하면 당일 시행착오를 크게 줄일 수 있다.</p><div class="tip-card"><h2>1. 위치와 동선부터 파악한다</h2><p>가양역 인근인지, 주차가 가능한 건물인지를 가장 먼저 확인해야 한다. 대중교통과 자차 이동 동선을 미리 검색해두면 당일 이동 시간을 크게 아낄 수 있고, 일행과 만나는 장소를 정할 때도 헤매지 않는다.</p></div><div class="tip-card"><h2>2. 운영 시간과 요일별 분위기를 확인한다</h2><p>클럽은 요일과 시간대에 따라 손님 구성과 분위기가 크게 달라지는 업종이다. 평일과 주말의 혼잡도 차이, 오픈 직후와 심야 시간대의 분위기 차이를 감안해 방문 요일과 시간을 정하는 것이 좋다.</p></div><div class="tip-card"><h2>3. 예약과 입장 절차를 미리 확인한다</h2><p>사전 연락으로 테이블 상황을 확인하는 편이 현장 대기 시간을 줄이는 가장 확실한 방법이다. 전화 문의 시 인원수와 희망 시간대, 동행 인원 구성을 함께 전달하면 안내가 훨씬 빠르게 진행된다.</p></div><div class="tip-card"><h2>4. 비용 구조를 이해하고 방문한다</h2><p>테이블 이용료, 주류, 서비스 요금이 항목별로 구성되는 경우가 많다. 정확한 금액은 매장과 인원, 시간대, 좌석 위치에 따라 달라지므로 방문 전 직접 문의해 확인하는 절차가 반드시 필요하다. 현장에서 안내받는 금액과 사전 문의 금액이 다르지 않은지 확인하는 습관을 들이면 좋다.</p></div><div class="tip-card"><h2>5. 동행 안전 수칙을 정해둔다</h2><p>처음 방문하는 인원이 많은 모임이라면 일행끼리 중간 연락 수단을 정해두고, 귀가 동선도 미리 계획해두는 편이 안전하다. 특히 대중교통 막차 시간을 확인해두면 자리를 옮기는 상황에서도 당황하지 않는다.</p></div><div class="highlight-box"><p>초보자가 가장 자주 놓치는 부분은 복장 규정이다. 매장별로 드레스코드 기준이 달라 방문 전 확인하지 않으면 입구에서 안내를 받아 일행 전체의 일정이 지연될 수 있다. 방문 예정 매장이 있다면 미리 전화로 복장 기준과 예약 가능 여부를 함께 물어보는 것이 가장 확실하다.</p></div><div class="cta-end"><p>가양동 클럽 방문 전 궁금한 사항은 전화로 문의하면 빠르게 안내받을 수 있다.</p><p><strong></strong></p></div></article></div></main>
 
 
 </body>
